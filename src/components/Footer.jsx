@@ -6,7 +6,7 @@ import ButtonLink from "./common/ButtonLink";
 const Footer = () => {
   return (
     <section id="footer" className="bg-darkBlue">
-      <div className="container mx-auto px-4 flex  flex-col-reverse justify-between items-center gap-8 py-10  md:flex-row">
+      <div className="container mx-auto px-4 flex  flex-col-reverse justify-between items-center gap-8 py-10 md:py-20  md:flex-row">
         {/* Logo and Icons */}
         <div className="flex flex-col gap-y-12">
           <img src={WhiteLogo} alt="" className="w-28" />

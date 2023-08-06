@@ -23,7 +23,7 @@ const Navbar = () => {
           ))}
         </div>
         {/* Container for Button and Hamburger */}
-        <div className="flex flex-row space-x-10">
+        <div className="flex flex-row space-x-10 items-center">
           {/* Button */}
           <div className="hidden md:block ">
             <ButtonLink
@@ -36,14 +36,14 @@ const Navbar = () => {
           <div className=" relative lg:hidden">
             <button onClick={() => setToggleMenu((prev) => !prev)}>
               {toggleMenu ? (
-                <RiCloseLine className="baseline" size={27} />
+                <RiCloseLine size={27} />
               ) : (
-                <RiMenu3Line className="baseline" size={27} />
+                <RiMenu3Line size={27} />
               )}
             </button>
 
             {toggleMenu && (
-              <div className="absolute flex flex-col items-center self-end py-8 px-20 mt-5  space-y-6 font-bol bg-white z-10 sm:w-auto sm:self-center right-6 drop-shadow-md">
+              <div className="absolute flex flex-col items-center self-end py-8 px-24 mt-5  space-y-6 font-bol bg-white z-10 sm:w-auto sm:self-center right-6 drop-shadow-md">
                 {constants.nav_items.map((item) => (
                   <a href="#" className="hover:text-darkGrayBlue">
                     {item}
